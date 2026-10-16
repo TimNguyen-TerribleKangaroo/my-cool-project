@@ -53,6 +53,8 @@ img {
     background-color: #ffffff;
 }
 a {
+    margin-left: 30px;
+    display: inline-block;
     color: #2563eb;
 }
 a:hover {
