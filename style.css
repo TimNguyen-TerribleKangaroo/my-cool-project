@@ -66,3 +66,39 @@ a {
 a:hover {
     color: #0f766e;
 }
+.page-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+.page-nav:has(.next-button:only-child) {
+    justify-content: flex-end;
+}
+.page-nav:has(.previous-button:only-child) {
+    justify-content: flex-start;
+}
+.prvious-button, .next-button{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 20px;
+    box-sizing: border-box;
+
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+a.next-button:hover, a.next-button:hover{
+    background-color: #0f766e;
+    color: white;
+}
+.prvious-button{
+    order: -1;
+}
+.next-button{
+    order: 1;
+}

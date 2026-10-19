@@ -1,39 +1,38 @@
 body {
-                background-image: url("index photo/index background.jpg");
-                background-size: cover;
-                background-position: center;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-            }
-            .container-bg {
-                background-color: rgba(255, 255, 255, 0.1);
-                padding: 25px;
-                border-radius: 15px;
-                margin: 30px auto;
-                max-width: 1000px;
-            }
-            h1 {
-                text-align: center;
-                font-size: 40px;
-            }
-            h2 {
-                font-size: 30px;
-            }
-            p {
-                text-align: justify;
-                font-size: 20px;
-            }
-            em {
-                font-weight: bold;
-                font-size: 200px;
-            }
-            .container {
-                font-size: 20px;
-            }
-            a {
-                color: rgb(16, 224, 27);
-            }
-            a:hover {
-                color: red;
-            }
-            
+    background-image: url("index photo/index background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.container-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    text-align: justify;
+    font-size: 20px;
+}
+em {
+    font-weight: bold;
+    font-size: 200px;
+}
+.container {
+    font-size: 20px;
+}
+a {
+    color: rgb(16, 224, 27);
+}
+a:hover {
+    color: red;
+}
