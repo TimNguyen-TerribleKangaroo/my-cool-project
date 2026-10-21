@@ -6,17 +6,15 @@
 
     <body>
         <nav>
-            <div class="container">
                 <a href="index.html">Home</a>
 
                 <a href="get started.html">Getting Started</a>
                 
                 <a href="style.html">CSS Styling</a>
 
-                <a href="github.html">GitHub</a>
+                <a href="github.html" class="active">GitHub</a>
 
-                <a href="extend.html">Extending html</a>
-            </div>
+                <a href="extend.html" >Extending html</a>
         </nav>
 
         <main>
@@ -44,7 +42,7 @@
             <img src="github photo/source controll.png">
             <br>
             <br>
-            
+
             <span>Step 5:</span>
             <p></p>
 
@@ -58,7 +56,26 @@
 
                     <a href="extend.html" class="next-button"> Next</a>
             </div>
+            
         </main>
+
+        <script>
+            let lastScrollY = window.scrollY;
+            const nav = document.querySelector("nav");
+
+            window.addEventListener("scroll", () => {
+                const currentlyScrollY = window.scrollY;
+
+                if (currentlyScrollY < 50 || currentlyScrollY< lastScrollY -3) {
+                        nav.classList.remove("nav-hidden");
+                    }
+                else if (currentlyScrollY > lastScrollY + 3) {
+                        nav.classList.add("nav-hidden");
+                    }
+
+                lastScrollY = currentlyScrollY; 
+                });
+        </script>
 
     </body>
 </html>

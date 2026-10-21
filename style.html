@@ -6,17 +6,15 @@
 
     <body>
         <nav>
-            <div class="container">
                 <a href="index.html">Home</a>
 
                 <a href="get started.html">Getting Started</a>
                 
-                <a href="style.html">CSS Styling</a>
+                <a href="style.html" class="active">CSS Styling</a>
 
                 <a href="github.html">GitHub</a>
 
                 <a href="extend.html">Extending html</a>
-            </div>
         </nav>
 
         <main>
@@ -84,5 +82,23 @@
 
         </main> 
 
+        <script>
+            let lastScrollY = window.scrollY;
+            const nav = document.querySelector("nav");
+
+            window.addEventListener("scroll", () => {
+                const currentlyScrollY = window.scrollY;
+
+                if (currentlyScrollY < 50 || currentlyScrollY< lastScrollY -3) {
+                        nav.classList.remove("nav-hidden");
+                    }
+                else if (currentlyScrollY > lastScrollY + 3) {
+                        nav.classList.add("nav-hidden");
+                    }
+
+                lastScrollY = currentlyScrollY; 
+                });
+        </script>
+        
     </body>
 </html>

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <HEAD>
+    <head>
         <link rel="stylesheet" href="style.css">
-    </HEAD>
+    </head>
 
-    <BODY>
+    <body>
         <nav>
-            <div class="container">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
 
                 <a href="get started.html">Getting Started</a>
                 
@@ -16,7 +15,6 @@
                 <a href="github.html">GitHub</a>
 
                 <a href="extend.html">Extending html</a>
-            </div>
         </nav>
 
 
@@ -44,4 +42,24 @@
                     <a href="get started.html" class="next-button"> Next</a>
                 </div>
         </main>
-    </BODY>
+
+        <script>
+            let lastScrollY = window.scrollY;
+            const nav = document.querySelector("nav");
+
+            window.addEventListener("scroll", () => {
+                const currentlyScrollY = window.scrollY;
+
+                if (currentlyScrollY < 50 || currentlyScrollY< lastScrollY -3) {
+                        nav.classList.remove("nav-hidden");
+                    }
+                else if (currentlyScrollY > lastScrollY + 3) {
+                        nav.classList.add("nav-hidden");
+                    }
+
+                lastScrollY = currentlyScrollY; 
+                });
+        </script>
+
+    <body/
+</html>
