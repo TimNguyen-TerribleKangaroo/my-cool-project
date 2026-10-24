@@ -50,8 +50,10 @@ img {
     display: block;
     text-align: center;
     margin: 15px auto;
-    width: 90%;
+    width: 50%;
     max-width: 1000px;
+    border: 2px solid black;
+
 }
 
 
